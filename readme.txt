@@ -8,3 +8,5 @@ of CoolTrayIcon/TextTrayIcon.
 
 ***** If you redistribute this package, please include all original files. *****
 
+Original: http://subsimple.com/delphi.php
+http://www.songbeamer.com/delphi/
