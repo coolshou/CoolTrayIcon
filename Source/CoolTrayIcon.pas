@@ -18,8 +18,8 @@ unit CoolTrayIcon;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
-  Menus, ShellApi, ExtCtrls, SimpleTimer {$IFDEF DELPHI_4_UP}, ImgList{$ENDIF};
+  Windows, Messages, SysUtils, Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms,
+  Vcl.Menus, ShellApi, Vcl.ExtCtrls, SimpleTimer {$IFDEF DELPHI_4_UP}, Vcl.ImgList{$ENDIF};
 
 const
   // User-defined message sent by the trayicon
@@ -259,7 +259,7 @@ implementation
 
 {$IFDEF DELPHI_4_UP}
 uses
-  ComCtrls;
+  vcl.ComCtrls;
 {$ENDIF}
 
 const
@@ -1641,3 +1641,4 @@ finalization
   end;
 
 end.
+
