@@ -276,6 +276,104 @@
   {$DEFINE Delphi22_UP}
   {$DEFINE Delphi23_UP}
 {$ENDIF}
+{$IFDEF VER310}      // Delphi 10.1 Berlin (24.0)
+  {$DEFINE Delphi2_UP}
+  {$DEFINE Delphi3_UP}
+  {$DEFINE Delphi4_UP}
+  {$DEFINE Delphi5_UP}
+  {$DEFINE Delphi6_UP}
+  {$DEFINE Delphi7_UP}
+  {$DEFINE Delphi9_UP}
+  {$DEFINE Delphi10_UP}
+  {$DEFINE Delphi11_UP}
+  {$DEFINE Delphi12_UP}
+  {$DEFINE Delphi14_UP}
+  {$DEFINE Delphi15_UP}
+  {$DEFINE Delphi16_UP}
+  {$DEFINE Delphi17_UP}
+  {$DEFINE Delphi18_UP}
+  {$DEFINE Delphi19_UP}
+  {$DEFINE Delphi20_UP}
+  {$DEFINE Delphi21_UP}
+  {$DEFINE Delphi22_UP}
+  {$DEFINE Delphi23_UP}
+  {$DEFINE Delphi24_UP}
+{$ENDIF}
+{$IFDEF VER320}      // Delphi 10.2 Tokyo (25.0)
+  {$DEFINE Delphi2_UP}
+  {$DEFINE Delphi3_UP}
+  {$DEFINE Delphi4_UP}
+  {$DEFINE Delphi5_UP}
+  {$DEFINE Delphi6_UP}
+  {$DEFINE Delphi7_UP}
+  {$DEFINE Delphi9_UP}
+  {$DEFINE Delphi10_UP}
+  {$DEFINE Delphi11_UP}
+  {$DEFINE Delphi12_UP}
+  {$DEFINE Delphi14_UP}
+  {$DEFINE Delphi15_UP}
+  {$DEFINE Delphi16_UP}
+  {$DEFINE Delphi17_UP}
+  {$DEFINE Delphi18_UP}
+  {$DEFINE Delphi19_UP}
+  {$DEFINE Delphi20_UP}
+  {$DEFINE Delphi21_UP}
+  {$DEFINE Delphi22_UP}
+  {$DEFINE Delphi23_UP}
+  {$DEFINE Delphi24_UP}
+  {$DEFINE Delphi25_UP}
+{$ENDIF}
+{$IFDEF VER330}      // Delphi 10.3 Rio (26.0)
+  {$DEFINE Delphi2_UP}
+  {$DEFINE Delphi3_UP}
+  {$DEFINE Delphi4_UP}
+  {$DEFINE Delphi5_UP}
+  {$DEFINE Delphi6_UP}
+  {$DEFINE Delphi7_UP}
+  {$DEFINE Delphi9_UP}
+  {$DEFINE Delphi10_UP}
+  {$DEFINE Delphi11_UP}
+  {$DEFINE Delphi12_UP}
+  {$DEFINE Delphi14_UP}
+  {$DEFINE Delphi15_UP}
+  {$DEFINE Delphi16_UP}
+  {$DEFINE Delphi17_UP}
+  {$DEFINE Delphi18_UP}
+  {$DEFINE Delphi19_UP}
+  {$DEFINE Delphi20_UP}
+  {$DEFINE Delphi21_UP}
+  {$DEFINE Delphi22_UP}
+  {$DEFINE Delphi23_UP}
+  {$DEFINE Delphi24_UP}
+  {$DEFINE Delphi25_UP}
+  {$DEFINE Delphi26_UP}
+{$ENDIF}
+{$IFDEF VER330}      // Delphi 10.4 Sydney (27.0)
+  {$DEFINE Delphi2_UP}
+  {$DEFINE Delphi3_UP}
+  {$DEFINE Delphi4_UP}
+  {$DEFINE Delphi5_UP}
+  {$DEFINE Delphi6_UP}
+  {$DEFINE Delphi7_UP}
+  {$DEFINE Delphi9_UP}
+  {$DEFINE Delphi10_UP}
+  {$DEFINE Delphi11_UP}
+  {$DEFINE Delphi12_UP}
+  {$DEFINE Delphi14_UP}
+  {$DEFINE Delphi15_UP}
+  {$DEFINE Delphi16_UP}
+  {$DEFINE Delphi17_UP}
+  {$DEFINE Delphi18_UP}
+  {$DEFINE Delphi19_UP}
+  {$DEFINE Delphi20_UP}
+  {$DEFINE Delphi21_UP}
+  {$DEFINE Delphi22_UP}
+  {$DEFINE Delphi23_UP}
+  {$DEFINE Delphi24_UP}
+  {$DEFINE Delphi25_UP}
+  {$DEFINE Delphi26_UP}
+  {$DEFINE Delphi27_UP}
+{$ENDIF}
 {$IFDEF VER93}  {$DEFINE BCB_1}    {$ENDIF}
 {$IFDEF VER110} {$DEFINE BCB_3}    {$ENDIF}
 {$IFDEF VER125} {$DEFINE BCB_4}    {$ENDIF}
