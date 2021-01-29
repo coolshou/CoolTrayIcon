@@ -18,8 +18,8 @@ unit CoolTrayIcon;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
-  Menus, ShellApi, ExtCtrls, SimpleTimer {$IFDEF DELPHI_4_UP}, ImgList{$ENDIF};
+  Windows, Messages, SysUtils, Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms,
+  Vcl.Menus, ShellApi, Vcl.ExtCtrls, SimpleTimer {$IFDEF DELPHI_4_UP}, Vcl.ImgList{$ENDIF};
 
 const
   // User-defined message sent by the trayicon
@@ -259,7 +259,7 @@ implementation
 
 {$IFDEF DELPHI_4_UP}
 uses
-  ComCtrls;
+  vcl.ComCtrls;
 {$ENDIF}
 
 const
@@ -1185,7 +1185,7 @@ begin
       else
         IconData.uFlags := IconData.uFlags and not NIF_TIP;
       {$ELSE}
-      StrLCopy(IconData.szTip, PChar(String(FHint)), SizeOf(IconData.szTip)-1);
+      StrLCopy(IconData.szTip, PAnsiChar(String(FHint)), SizeOf(IconData.szTip)-1);
       { StrLCopy must be used since szTip is only 128 bytes. }
       { From IE ver. 5 szTip is 128 chars, before that only 64 chars. I suppose
         I could use GetComCtlVersion to check the version and then truncate
@@ -1262,8 +1262,8 @@ begin
   with IconData do
   begin
     uFlags := uFlags or NIF_INFO;
-    StrLCopy(szInfo, PChar(Text), SizeOf(szInfo)-1);
-    StrLCopy(szInfoTitle, PChar(Title), SizeOf(szInfoTitle)-1);
+    StrLCopy(szInfo, PAnsiChar(Text), SizeOf(szInfo)-1);
+    StrLCopy(szInfoTitle, PAnsiChar(Title), SizeOf(szInfoTitle)-1);
     TimeoutOrVersion.uTimeout := TimeoutSecs * 1000;
     dwInfoFlags := aBalloonIconTypes[IconType];
   end;
@@ -1290,11 +1290,11 @@ begin
     uFlags := uFlags or NIF_INFO;
     FillChar(szInfo, 0, SizeOf(szInfo));
     for I := 0 to SizeOf(szInfo)-1 do
-      szInfo[I] := Char(Text[I]);
+      szInfo[I] := AnsiChar(Text[I]);
     szInfo[0] := #1;
     FillChar(szInfoTitle, 0, SizeOf(szInfoTitle));
     for I := 0 to SizeOf(szInfoTitle)-1 do
-      szInfoTitle[I] := Char(Title[I]);
+      szInfoTitle[I] := AnsiChar(Title[I]);
     szInfoTitle[0] := #1;
     TimeoutOrVersion.uTimeout := TimeoutSecs * 1000;
     dwInfoFlags := aBalloonIconTypes[IconType];
