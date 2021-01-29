@@ -348,7 +348,7 @@
   {$DEFINE Delphi25_UP}
   {$DEFINE Delphi26_UP}
 {$ENDIF}
-{$IFDEF VER330}      // Delphi 10.4 Sydney (27.0)
+{$IFDEF VER340}      // Delphi 10.4 Sydney (27.0)
   {$DEFINE Delphi2_UP}
   {$DEFINE Delphi3_UP}
   {$DEFINE Delphi4_UP}
